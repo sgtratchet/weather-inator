@@ -2,15 +2,6 @@ var cityName ="";
 var currentWeatherAPI = "https://api.openweathermap.org/data/2.5/weather?q="+location+"&units=imperial&appid=803fa34dbd4909977dd765eb002a2987";
 var fiveDayForecast = "https://api.openweathermap.org/data/2.5/forecast?q=springville&appid=803fa34dbd4909977dd765eb002a2987";
 
-// var currentWeather =function(user){
-//     fetch(currentWeatherAPI)
-        // .then(function(response) {
-        //   return response.json();
-        // })
-        // .then(function(data) {
-        //   console.log(data);
-        // });
-// }
 var currentWeather = function(location){
     var currentWeatherAPI = "https://api.openweathermap.org/data/2.5/weather?q="+location+"&units=imperial&appid=803fa34dbd4909977dd765eb002a2987";
     fetch(currentWeatherAPI).then(function(response){
