@@ -15,12 +15,18 @@
 <main class ="flex-row justify-space-between">
     <div class="col-3 col-md-4" id=user-form></div>
         <div class="input-group mb-3">
+            <div class = "col-12"> 
+                <h3>Search For a City:</h3>
+            </div>
             <input type="text" class="form-control" id ="user-input" placeholder="Input City" autofocus="true">
             <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button" id="city-button">Button</button>
         </div>
     </div>
-    <div class='col-12 col-md-8'></div>
+    <div class='col-12 col-md-8'>
+        <h2 class='subtitle' id='weather-search'>weather <span id='display-weather'></span></h2>
+        <div id='weather-container'></div>
+    </div>
 </main>
     <script src="./assets/js/script.js"></script>
 </body>
