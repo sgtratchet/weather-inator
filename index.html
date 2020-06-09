@@ -12,25 +12,16 @@
         <h1 class='display-3'>Weather-Inator</h1>
 
     </header>
-    <div class='container'>
-        <div class = 'row col-3'>
-                <div class = 'search-box'>
-
-                    <button type="submit">search</button>
-                </div>
-                <div class='recent-search'>
-                    recent search
-                </div>
-        </div>
-    
-        <div class='row col-9'>
-            <div class='weather-container col-9'>
-                <div>
-                    current weather
-                </div>
-            </div>
+<main class ="flex-row justify-space-between">
+    <div class="col-12 col-md-4"></div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Input City">
+            <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="cityButton">Button</button>
         </div>
     </div>
+    <div class='col-12 col-md-8'></div>
+</main>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
