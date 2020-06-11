@@ -40,6 +40,22 @@ var displayWeather = function(weather, inputCity){
     console.log(weatherHumidity);
     console.log(weather);
     console.log(inputCity);
+
+    var weatherEl = document.createElement('div');
+    weatherEl.classlist ="card";
+
+    var cardBodyEl = document.createElement('div');
+    cardBodyEl.setAttribute("class", 'card-body');
+
+    var weatherCardDate = document.createElement
+    var weatherCardIcon = document.createElement
+    var weatherCardTemp = document.createElement
+    var weatherCardHumidity = document.createElement
+
+    weatherEl.appendChild(cardBodyEl);
+    weatherContainerEl.appendChild(weatherEl);
+    // var cardTitleEl = document.createElement('h5')
+
 }
 
 
