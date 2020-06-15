@@ -8,25 +8,37 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class='jumbotron'>
+    <header>
         <h1 class='display-3'>Weather-Inator</h1>
 
     </header>
-<main class ="container justify-space-between">
+<main class ="container">
     <div class="row" >
-        <div class="search-container input-group mb-3 col-3 col-md-4 id=user-form">
-            <div class = "col-12"> 
+        <div class="search-container input-group mb-3 col-2 col-md-4" id="user-form">
+            <div class = "container-fluid"> 
                 <h3>Search For a City:</h3>
             </div>
-            <input type="text" class="form-control" id ="user-input" placeholder="Input City" autofocus="true">
+            <input type="text" class="form-control" id ="user-input" placeholder="Enter City" autofocus="true">
             <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" id="city-button">Button</button>
+            <button class="btn search-btn btn-outline-secondary" type="button" id="city-button">Search</button>
+            </div>
+            
+            <div class="container-fluid" id ="recent-search">
+
             </div>
         </div>
     
-        <div class='row col-9 col-md-6 weather'>
-            <h2 class='subtitle' id='weather-search'>Weather: <span id='display-weather'></span></h2>
-            <div id='weather-container'></div>
+        <div class='row col-md'>
+            <div class = "weather container-fluid">
+                <h2 class='subtitle container-fluid' id='weather-search'>Weather: <span id='display-weather'></span></h2>
+                <div class = "col-12" id='weather-container'></div>
+            </div>
+            <div class= "five-day container">
+                <p>5-day Forcast:</p>
+                <div class = 'row' id='five-day-container'></div>
+                    
+                
+            </div>
         </div>
     </div>
 </main>
